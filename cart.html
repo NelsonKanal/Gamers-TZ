@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Gamers' Retreat Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="retail.html">Shop</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+
+    <main class="cart-container">
+        <!-- Cart Items -->
+        <section class="cart-items">
+            <h2>Your Items</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example of a product in the cart -->
+                    <tr>
+                        <td>
+                            <img src="image 5.jpg" alt="PlayStation 5" class="cart-item-img"> PlayStation 5
+                        </td>
+                        <td>$499.99</td>
+                        <td>
+                            <button class="quantity-btn" onclick="updateQuantity('ps5', -1)">-</button>
+                            <span id="ps5-quantity">1</span>
+                            <button class="quantity-btn" onclick="updateQuantity('ps5', 1)">+</button>
+                        </td>
+                        <td id="ps5-total">$499.99</td>
+                        <td><button class="remove-item" onclick="removeItem('ps5')">Remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="image 4.jpg" alt="Xbox Series X" class="cart-item-img"> Xbox Series X
+                        </td>
+                        <td>$499.99</td>
+                        <td>
+                            <button class="quantity-btn" onclick="updateQuantity('xbox', -1)">-</button>
+                            <span id="xbox-quantity">1</span>
+                            <button class="quantity-btn" onclick="updateQuantity('xbox', 1)">+</button>
+                        </td>
+                        <td id="xbox-total">$499.99</td>
+                        <td><button class="remove-item" onclick="removeItem('xbox')">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Cart Summary -->
+        <section class="cart-summary">
+            <h2>Cart Summary</h2>
+            <div class="summary-item">
+                <span>Subtotal:</span>
+                <span id="subtotal">$999.98</span>
+            </div>
+            <div class="summary-item">
+                <span>Tax (10%):</span>
+                <span id="tax">$99.99</span>
+            </div>
+            <div class="summary-item">
+                <span>Total:</span>
+                <span id="total">$1,099.97</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gamers' Retreat Community. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

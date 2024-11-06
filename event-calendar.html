@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar - Gamers' Retreat Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Event Calendar</h1>
+        <p>Check our events and request a chance to join us at the center!</p>
+    </header>
+
+    <main class="calendar-container">
+        <!-- Event Calendar Section -->
+        <section class="event-calendar">
+            <h2>Upcoming Events</h2>
+            <ul class="event-list">
+                <li><strong>October 31</strong> - Halloween Game Night</li>
+                <li><strong>November 10</strong> - FIFA Tournament</li>
+                <li><strong>November 20</strong> - Retro Games Day</li>
+                <li><strong>December 15</strong> - Holiday Special</li>
+            </ul>
+        </section>
+
+        <!-- Booking Request Form Section -->
+        <section class="request-form">
+            <h2>Request a Spot</h2>
+            <form id="bookingForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="eventDate">Select Date:</label>
+                <select id="eventDate" name="eventDate" required>
+                    <option value="October 31">October 31 - Halloween Game Night</option>
+                    <option value="November 10">November 10 - FIFA Tournament</option>
+                    <option value="November 20">November 20 - Retro Games Day</option>
+                    <option value="December 15">December 15 - Holiday Special</option>
+                </select>
+
+                <label for="additionalMessage">Additional Message:</label>
+                <textarea id="additionalMessage" name="additionalMessage" placeholder="Any specific requests?"></textarea>
+
+                <button type="submit">Request Spot</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

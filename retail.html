@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail - Gamers' Retreat Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Retail Store</h1>
+        <p>Browse and shop for your favorite gaming consoles and accessories.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <main class="retail-container">
+        <!-- Search Bar -->
+        <section class="search-bar">
+            <input type="text" id="search" placeholder="Search for products..." onkeyup="filterProducts()">
+        </section>
+
+        <!-- Product Categories -->
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-list">
+                <div class="category">
+                    <h3>Game Consoles</h3>
+                    <ul>
+                        <li><a href="#">PlayStation 5</a></li>
+                        <li><a href="#">Xbox Series X</a></li>
+                        <li><a href="#">Nintendo Switch</a></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Accessories</h3>
+                    <ul>
+                        <li><a href="#">Controllers</a></li>
+                        <li><a href="#">Headsets</a></li>
+                        <li><a href="#">Gamepads</a></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Merchandise</h3>
+                    <ul>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Mugs</a></li>
+                        <li><a href="#">Posters</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Listings -->
+        <section class="product-list">
+            <h2>Featured Products</h2>
+            <div class="product-card">
+                <img src="image 5.jpg" alt="PlayStation 5">
+                <h3>PlayStation 5</h3>
+                <p>Next-gen gaming console with 4K resolution.</p>
+                <p class="price">$499.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="image 4.jpg" alt="Xbox Series X">
+                <h3>Xbox Series X</h3>
+                <p>The fastest, most powerful Xbox console.</p>
+                <p class="price">$499.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="image 6.jpg" alt="Nintendo Switch">
+                <h3>Nintendo Switch</h3>
+                <p>Hybrid console for gaming on the go or at home.</p>
+                <p class="price">$299.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gamers' Retreat Community. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
